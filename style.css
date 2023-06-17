@@ -3,6 +3,7 @@
     margin: 0;
     width: 85%;
     margin: 0 auto;
+    font-family: 'Playfair';
 }
 
 /* HEADER */
@@ -12,7 +13,6 @@
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    font-family: 'Playfair';
 }
 #header #today {
     font-weight: bold;
@@ -40,35 +40,195 @@
     justify-content: center; /*horizontal align*/
     align-items: center; /*vertical align */
     gap: 50px;
-    height: 40px;
-    border-top: 2px solid rgb(210,207,207);
+    height: 50px;
+    border-top: 2px solid rgb(234, 234, 234);
     border-bottom: 2px solid black;
-    font-family: 'Playfair';
+    margin-top: 12px;
 }
 #navbar a {
     text-decoration: none;
     color: black;
     text-transform: uppercase;
     font-size: 20px;
+    padding: 4px;
+    transition: 0.6s;
+}
+#navbar a:hover {
+    background: rgb(246, 246, 246);
 }
 
 /* CONTENT */
 
 #content {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     width: 100%;
     margin-top: 20px;
     display: flex;
+    padding-bottom: 16px;
+    border-bottom: 2px solid black;
 }
+
+/* LEFT CONTENT */
 
 #leftContent {
-    border: 2px solid red;
-    width: 65%;
+    /* border: 2px solid red; */
+    width: 70%;
     display: flex;
+    flex-flow: column nowrap;
+}
+#leftContent #article {
+    /* border: 2px solid green; */
+    width: 100%;
+    display: flex;
+    border-bottom: 2px solid black;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+#leftContent div {
+    /* border: 2px solid purple; */
+    display: inline-flex;
+}
+#leftContent #stories {
+    width: 35%;
+    order: 1;
+    padding: 5px;
+    flex-flow: column;
+    align-content: space-between;
+}
+#leftContent #stories div {
+    flex-flow: column;
+    margin-top: 19px;
+}
+#leftContent #stories a {
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+}
+#leftContent #stories a:hover {
+    color: rgb(69, 69, 69);
+}
+#leftContent #stories #storyTitle {
+    font-weight: bolder;
+    font-size: 32px;
+}
+#leftContent #stories #storyDesc {
+    font-size: 18px;
+    margin: 10px 0;
+}
+#leftContent #stories #storyTime {
+    font-weight: lighter;
+    font-size: 12px;
+}
+#leftContent #storyImage {
+    width: 65%;
+    order: 2;
+    padding: 15px 0 15px 25px;
+    /* padding: 15px; */
+}
+#leftContent #storyImage img {
+    width: 100%;
 }
 
+/* RIGHT CONTENT */
+
 #rightContent {
-    border: 2px solid blue;
-    width: 35%;
+    /* border: 2px solid blue; */
+    width: 30%;
+    border-left: 2px solid rgb(210,207,207);
+    margin-left: 20px;
+    padding: 0 12px;
+}
+#rightContent #shorts {
+    /* border: 2px solid green; */
+    width: 100%;
+    margin: 10px 0;
     display: flex;
+    flex-flow: column;
+    padding-bottom: 37px;
+    border-bottom: 2px solid black;
+}
+#rightContent #shorts a {
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+}
+#rightContent #shorts a:hover {
+    color: rgb(69, 69, 69);
+}
+#rightContent #shorts #shortType {
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+#rightContent #shorts #shortTitle {
+    font-weight: bolder;
+    font-size: 24px;
+}
+#rightContent #shorts #shortAuthor {
+    color: rgb(69, 69, 69);
+    font-size: 14px;
+}
+#rightContent #shorts #shortDesc {
+    font-size: 17px;
+    margin-top: 10px;
+}
+#rightContent #shorts #shortTime {
+    color: rgb(69, 69, 69);
+    font-size: 13px;
+    margin-top: 8px;
+}
+#rightContent #shorts img {
+    padding: 12px 0;
+}
+
+/* FOOTER */
+
+#footer {
+    padding: 15px 0;
+}
+#footer #footerLogo img {
+    height: 44px;
+    margin-bottom: 20px;
+}
+#footer #links {
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-between;
+}
+#footer #links #link #linkTitle {
+    font-weight: bold;
+}
+#footer #links #link ul {
+    display: inline;
+}
+#footer #links #link li {
+    list-style-type: none;
+}
+#footer #links #link a {
+    text-decoration: none;
+    color: black;
+    flex-flow: column;
+}
+#footer #links #link a:hover {
+    text-decoration: underline;
+}
+
+#footer #endnoteContainer {
+    /* border: 2px solid black; */
+    margin-top: 14px;
+    display: flex;
+    border-top: 2px solid rgb(230, 230, 230);
+    padding-top: 10px;
+}
+#footer #endnoteContainer #endnote{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 11px;
+    justify-content: space-evenly;
+}
+#footer #endnoteContainer #endnote a,span {
+    text-decoration: none;
+    color: rgb(69, 69, 69);
+}
+#footer #endnoteContainer #endnote a:hover {
+    text-decoration: underline;
 }
