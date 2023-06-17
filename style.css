@@ -1,0 +1,74 @@
+#wrapper {
+    padding: 0;
+    margin: 0;
+    width: 85%;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+#header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Playfair';
+}
+#header #today {
+    font-weight: bold;
+}
+#header img {
+    width:600px;
+    flex-basis: 40%;
+}
+#header div {
+    flex-basis: 10%;
+}
+#header #stocks {
+    text-align: right;
+}
+#header #gme {
+    color: #00a400;
+}
+
+/* NAVBAR */
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center; /*horizontal align*/
+    align-items: center; /*vertical align */
+    gap: 50px;
+    height: 40px;
+    border-top: 2px solid rgb(210,207,207);
+    border-bottom: 2px solid black;
+    font-family: 'Playfair';
+}
+#navbar a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+/* CONTENT */
+
+#content {
+    border: 2px solid black;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+}
+
+#leftContent {
+    border: 2px solid red;
+    width: 65%;
+    display: flex;
+}
+
+#rightContent {
+    border: 2px solid blue;
+    width: 35%;
+    display: flex;
+}
